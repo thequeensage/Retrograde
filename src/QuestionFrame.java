@@ -13,5 +13,4 @@ public class QuestionFrame extends JFrame{
     public QuestionFrame(){
         Utility.__initialization__(this, mainPanel);
     }
-
 }
