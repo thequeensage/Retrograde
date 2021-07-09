@@ -15,13 +15,12 @@ public class CategoryFrame extends JFrame{
     private JButton subCategory3;
     private JButton subCategory4;
     private JButton subCategory5;
-    private JButton subCategory6;
 
     public JButton[] allButtons;
     public JButton[] majorButtons;
     public CategoryFrame(){
         allButtons = new JButton[] { motherboardButton, CPUButton, chipsetButton, networkButton, operatingSystemButton,
-                subCategory1, subCategory2, subCategory3, subCategory4, subCategory5, subCategory6 };
+                subCategory1, subCategory2, subCategory3, subCategory4, subCategory5 };
         majorButtons = new JButton[] { motherboardButton, CPUButton, chipsetButton, networkButton, operatingSystemButton };
         __initialization__();
 
@@ -64,7 +63,6 @@ public class CategoryFrame extends JFrame{
             subCategory3.setText("Ports");
             subCategory4.setText("BIOS");
             subCategory5.setText("CMOS");
-            subCategory6.setText("Bus Ports");
         });
         CPUButton.addActionListener(e -> {
             resetColorMajorButtons();
@@ -75,7 +73,6 @@ public class CategoryFrame extends JFrame{
             subCategory3.setText("Registers");
             subCategory4.setText("");
             subCategory5.setText("");
-            subCategory6.setText("");
         });
         chipsetButton.addActionListener(e -> {
             resetColorMajorButtons();
@@ -86,7 +83,6 @@ public class CategoryFrame extends JFrame{
             subCategory3.setText("");
             subCategory4.setText("");
             subCategory5.setText("");
-            subCategory6.setText("");
         });
         networkButton.addActionListener(e -> {
             resetColorMajorButtons();
@@ -97,7 +93,6 @@ public class CategoryFrame extends JFrame{
             subCategory3.setText("");
             subCategory4.setText("");
             subCategory5.setText("");
-            subCategory6.setText("");
         });
         operatingSystemButton.addActionListener(e -> {
             resetColorMajorButtons();
@@ -108,7 +103,6 @@ public class CategoryFrame extends JFrame{
             subCategory3.setText("");
             subCategory4.setText("");
             subCategory5.setText("");
-            subCategory6.setText("");
         });
     }
 

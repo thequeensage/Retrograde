@@ -13,6 +13,10 @@ interface ThemeValues {
     Color BLUE_CHILL = new Color(14, 167, 172);
     Color MOUNTAIN_MEADOW = new Color(34, 181, 146);
     Color MALACHITE = new Color(25, 235, 130);
+    Color OFF_WHITE =  new Color(239,240,209);
+    Color LILAC = new Color(215,192,208);
+    Color DARK_BLUE = new Color(38,39,48);
+    Color CYAN = new Color(153, 255, 255);
 }
 public interface Utility {
     static void __initialization__(JFrame frame, JPanel panel){
@@ -20,7 +24,7 @@ public interface Utility {
         frame.setContentPane(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Retrograde");
-        panel.setBackground(ThemeValues.ROYAL_BLUE);
+        panel.setBackground(ThemeValues.OFF_WHITE);
         styleComponents(panel.getComponents());
 //        recheckScreen(frame);
         frame.setLocationRelativeTo(null);
@@ -47,7 +51,7 @@ public interface Utility {
         }catch (FontFormatException e){
             e.printStackTrace();
         }
-        font = font.deriveFont(11f);
+        font = font.deriveFont(24f);
         return font;
     }
 
@@ -62,13 +66,13 @@ public interface Utility {
                 b.setBorderPainted(false);
                 b.setForeground(ThemeValues.MALACHITE);
                 if(b.getIcon() == null){
-                    b.setBackground(ThemeValues.ROYAL_BLUE);
-                    b.setForeground(ThemeValues.MALACHITE);
+                    //b.setBackground(ThemeValues.ROYAL_BLUE);
+                    //b.setForeground(ThemeValues.MALACHITE);
                 }
                 else{
                     b.setContentAreaFilled(false);
                     b.setBackground(null);
-                    b.setForeground(ThemeValues.MOUNTAIN_MEADOW);
+                    //b.setForeground(ThemeValues.MOUNTAIN_MEADOW);
                     String path = b.getIcon().toString();
                     b.addMouseListener(new MouseAdapter() {
                         @Override
