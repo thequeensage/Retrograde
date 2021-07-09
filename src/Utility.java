@@ -24,7 +24,7 @@ public interface Utility {
         frame.setContentPane(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Retrograde");
-        panel.setBackground(ThemeValues.OFF_WHITE);
+        panel.setBackground(ThemeValues.DARK_BLUE);
         styleComponents(panel.getComponents());
 //        recheckScreen(frame);
         frame.setLocationRelativeTo(null);

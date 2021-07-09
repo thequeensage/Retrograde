@@ -8,6 +8,8 @@ public class MenuFrame extends JFrame{
     private JButton highscoreButton;
     private JButton exitButton;
     private JPanel mainPanel;
+    private JButton continueButton;
+    private JButton secretButton;
 
     public MenuFrame(){
         Utility.__initialization__(this, mainPanel);
